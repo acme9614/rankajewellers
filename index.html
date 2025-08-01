@@ -50,7 +50,7 @@
       <!-- Drawer -->
       <div
         id="drawer"
-        class="fixed top-0 left-0 w-1/2 max-w-sm h-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out"
+        class="fixed top-0 left-0 w-1/2 max-w-sm h-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
       >
         <div class="flex justify-between items-center gap-4 px-4 py-4 border-b">
           <!-- Drawer Logo -->
@@ -72,6 +72,8 @@
         <!-- Drawer Navigation Links -->
         <nav class="flex flex-col gap-4 px-6 py-6 text-black">
           <a href="#" onclick="navigateToScheme()">Scheme</a>
+          <a href="#" onclick="navigateToCatalogues()">Catalogues</a>
+          <a href="#" onclick="navigateToQuickPurchase()">Quick Purchase</a>
           <a href="#" onclick="navigateToBankDetails()">Bank</a>
           <a href="#" onclick="navigateToKyc()">KYC</a>
           <a href="#" onclick="navigateToRate()">Rate</a>
@@ -173,7 +175,7 @@
     <section id="tabsWrapper" class="max-w-4xl mx-auto py-8 font-playfair">
       <div
         id="tabs"
-        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3"
+        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-3"
       ></div>
 
       <!-- Show More Button: Visible only on mobile -->
